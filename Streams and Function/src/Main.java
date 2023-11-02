@@ -94,7 +94,7 @@ public class Main {
                 .map(Usuarios::getSaldo).reduce(Double::sum).stream().toList();
         System.out.println(usuariosTotalSaldo);
 
-        //FUNCTIONS (Usados Apenas com MAP)
+        //FUNCTIONS
         List<String> ususariosOrdenadosF = usuarios.stream()
                 .map(Functions.funtionNomes)
                 .sorted()
